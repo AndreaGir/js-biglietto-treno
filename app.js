@@ -11,16 +11,16 @@ let prezzoScontoRagazzi = 0.2
 let prezzoScontoAnziani = 0.4
 
 
-
+var prezzo;
 
 
 if ( eta < 18 ){
      
-    var prezzo = prezzoPerChilometro - prezzoScontoRagazzi
+    var prezzo = prezzoPerChilometro - (prezzoPerChilometro * prezzoScontoRagazzi)
 
 }
 else if (eta > 65){
-    var prezzo = prezzoPerChilometro - prezzoScontoAnziani
+    var prezzo = prezzoPerChilometro - (prezzoPerChilometro * prezzoScontoAnziani)
 }
 else{
 
